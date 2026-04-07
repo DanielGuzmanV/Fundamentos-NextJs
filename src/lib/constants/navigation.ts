@@ -3,8 +3,8 @@ import { BookOpen, LampDesk, LayoutDashboard, LucideIcon, Settings } from "lucid
 export const PATHS = {
   HOME: '/',
   PROJECT_1: '/proyecto_1',
-  DEMO_1: '/demos/project-demo-1',
-  DEMO_2: '/demos/project-demo-2',
+  DEMO_1: '/demos/demo-1',
+  DEMO_2: '/demos/demo-2',
   SETTINGS: '/settings',
   LOGIN: '/login',
 } as const;
