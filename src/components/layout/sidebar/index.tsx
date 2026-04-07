@@ -19,6 +19,7 @@ export const SidebarCustom = ({ isOpen, onClose, isCollapsed, setIsCollapsed }: 
       lg:relative lg:translate-x-0 
       ${isCollapsed ? 'lg:w-20' : 'lg:w-64'} 
       w-64 dark:bg-black dark:text-zinc-50
+      overflow-x-hidden
     `}>
       <div className="flex flex-col h-full">
         {/* Header con botón de Toggle */}
@@ -44,12 +45,7 @@ export const SidebarCustom = ({ isOpen, onClose, isCollapsed, setIsCollapsed }: 
         </div>
 
         {/* Navegacion de items */}
-        <nav className="flex-1 px-4 space-y-2 overflow-y-auto">
-          {/* {!isCollapsed && (
-            <p className="px-3 mt-4 mb-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">
-              Menu Principal
-            </p>
-          )} */}
+        <nav className="flex-1 px-4 space-y-2 overflow-y-auto overflow-x-hidden">
 
           {MENU_ITEMS.map((item) => (
             item.isSubmenu
@@ -65,7 +61,7 @@ export const SidebarCustom = ({ isOpen, onClose, isCollapsed, setIsCollapsed }: 
         </nav>
 
         {/* Footer */}
-        <div className="p-4 border-t border-gray-100">
+        <div className="p-4 border-t border-gray-100 overflow-x-hidden">
           <Link 
             href={PATHS.LOGIN} 
             className={`flex items-center gap-3 p-3 text-gray-600 hover:text-indigo-600 font-medium transition-colors ${isCollapsed ? 'justify-center' : ''}`}
