@@ -1,4 +1,4 @@
-import { PATHS } from "@/lib/constants/navigation";
+import { PATHS } from "@/lib/constants/paths";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 

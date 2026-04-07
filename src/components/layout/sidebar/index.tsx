@@ -2,7 +2,8 @@ import { X, LogIn, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import Link from "next/link";
 import { NavItem } from "./nav-item";
 import { SubMenuItem } from "./sub-menu-item";
-import { MENU_ITEMS, PATHS } from "@/lib/constants/navigation";
+import { MENU_ITEMS } from "@/lib/constants/navigation";
+import { PATHS } from "@/lib/constants/paths";
 
 interface Props {
   isOpen: boolean;

@@ -1,4 +1,4 @@
-import { PATHS } from "@/lib/constants/navigation"
+import { PATHS } from "@/lib/constants/paths"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 

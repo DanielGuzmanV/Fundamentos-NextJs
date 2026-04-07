@@ -1,6 +1,6 @@
-import { PATHS } from "@/lib/constants/navigation";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
+import { PATHS } from "@/lib/constants/paths";
 
 export default function CryptoMain() { 
   return (
