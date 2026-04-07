@@ -7,6 +7,7 @@ export const PATHS = {
   DEMO_2: '/demos/demo-2',
   SETTINGS: '/settings',
   LOGIN: '/login',
+  CRYPTO_DASHBOARD: '/crypto-dashboard'
 } as const;
 
 export interface NavItemConfig {
