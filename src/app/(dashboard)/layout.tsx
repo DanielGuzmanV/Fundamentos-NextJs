@@ -1,4 +1,4 @@
-import { DashboardShell } from "./_components/DashboardShell";
+import { DashboardShell } from "../../components/layout/DashboardShell";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
