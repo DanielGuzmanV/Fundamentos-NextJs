@@ -1,5 +1,5 @@
-import { HeaderHero } from "../components/crypto-hero/HeaderHero";
-import { CardsFeaturesHero } from "../components/crypto-hero/CardsFeaturesHero";
+import { HeaderHero } from "../components/HeaderHero";
+import { CardsFeaturesHero } from "../components/CardsFeaturesHero";
 import { ButtonScreens } from "@/components/ui/ButtonScreens";
 import { PATHS } from "@/lib/constants/paths";
 import { ArrowRight } from "lucide-react";
