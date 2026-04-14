@@ -5,5 +5,10 @@ export const PATHS = {
   DEMO_2: '/demos/demo-2',
   SETTINGS: '/settings',
   LOGIN: '/login',
-  CRYPTO_DASHBOARD: '/crypto-dashboard'
+
+  // Rutas de la demo Crypto Dashboard
+  CRYPTO_DASHBOARD: '/crypto-dashboard',
+  CRYPTO_PORTFOLIO: '/crypto-dashboard/portfolio',
+  CRYPTO_SWAP: '/crypto-dashboard/swap',
+  CRYPTO_HISTORY: '/crypto-dashboard/history'
 } as const;
