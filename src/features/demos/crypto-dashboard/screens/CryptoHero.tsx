@@ -1,6 +1,8 @@
 import { HeaderHero } from "../components/crypto-hero/HeaderHero";
 import { CardsFeaturesHero } from "../components/crypto-hero/CardsFeaturesHero";
-import { ButtonHero } from "../components/crypto-hero/ButtonHero";
+import { ButtonScreens } from "@/components/ButtonScreens";
+import { PATHS } from "@/lib/constants/paths";
+import { ArrowRight } from "lucide-react";
 
 export default function CryptoHero() { 
   return (
@@ -26,7 +28,20 @@ export default function CryptoHero() {
         </div>
 
         {/* CTA (Call to Action) */}
-        <ButtonHero/>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <ButtonScreens
+            title="Ver Demo en Vivo"
+            linkPath={PATHS.CRYPTO_DASHBOARD}
+            Icon={ArrowRight}
+            variant="primary"
+          />
+          
+          <ButtonScreens
+            title="Volver al Dashboard principal"
+            linkPath={PATHS.HOME}
+            variant="secondary"
+          />
+        </div>
       </div>
     </div>
   ); 
