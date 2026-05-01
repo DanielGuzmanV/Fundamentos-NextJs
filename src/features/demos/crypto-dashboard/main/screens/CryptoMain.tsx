@@ -1,4 +1,5 @@
 import { MarketCard } from "../components/market/MarketCard";
+import { PriceChart } from "../components/market/PriceChart";
 import { TOP_COINS } from "../constants/marketData";
 
 export default function CryptoMain() { 
@@ -26,10 +27,21 @@ export default function CryptoMain() {
         ))}
       </div>
 
-      {/* Aquí irán el Gráfico y la Tabla después */}
+      {/* Gráfico y la Tabla después */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 bg-white h-100 rounded-3xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400">
-          Espacio para el Gráfico (Recharts)
+        <div className="lg:col-span-2 h-100"> 
+          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm h-full flex flex-col">
+            <div className="flex justify-between items-center mb-6">
+              <div>
+                <h3 className="text-lg font-bold text-slate-900">Rendimiento Semanal</h3>
+                <p className="text-sm text-slate-500">Bitcoin (BTC) vs USD</p>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-lg">+12.5%</span>
+              </div>
+            </div>
+            <PriceChart />
+          </div>
         </div>
         <div className="bg-white h-100 rounded-3xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400">
           Actividad Reciente
