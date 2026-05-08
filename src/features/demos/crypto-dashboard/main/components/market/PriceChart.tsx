@@ -2,18 +2,24 @@
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import { PRICE_HISTORY } from '../../constants/marketData';
 
-export const PriceChart = () => {
+interface Props {
+  selectedCoin1: string;
+  selectedCoin2: string;
+  // Aquí podríamos añadir 'data' en el futuro
+}
+
+export const PriceChart = ({}: Props) => {
   return (
-    <div className="flex-1 w-full min-h-75">
+    <div className="w-full h-full">
       <ResponsiveContainer width="100%" height="100%">
-        <AreaChart data={PRICE_HISTORY} margin={{bottom: 20}}>
+        <AreaChart data={PRICE_HISTORY} margin={{bottom: 25}}>
           <defs>
             <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#4f46e5" stopOpacity={0.1}/>
               <stop offset="95%" stopColor="#4f46e5" stopOpacity={0}/>
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="black" />
           <XAxis 
             dataKey="day" 
             axisLine={false} 
