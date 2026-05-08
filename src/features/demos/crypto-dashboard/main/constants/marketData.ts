@@ -1,4 +1,4 @@
-import { CryptoSummary } from "../types/crypto";
+import { CryptoSummary, SelectableAsset } from "../types/crypto";
 
 export const TOP_COINS: CryptoSummary[] = [
   { name: "Bitcoin", symbol: "BTC", price: "$64,230.50", change: 2.45 },
@@ -16,3 +16,13 @@ export const PRICE_HISTORY = [
   { day: "Sab", price: 65000 },
   { day: "Dom", price: 64230 },
 ];
+
+// Lista de activos seleccionables
+export const SELECTABLE_ASSETS: SelectableAsset[] = [
+  { id: "bitcoin", name: "Bitcoin", symbol: "BTC" },
+  { id: "ethereum", name: "Ethereum", symbol: "ETH" },
+  { id: "solana", name: "Solana", symbol: "SOL" },
+  { id: "cardano", name: "Cardano", symbol: "ADA" },
+  { id: "ripple", name: "Ripple", symbol: "XRP" },
+  { id: "dogecoin", name: "Dogecoin", symbol: "DOGE" },
+]
