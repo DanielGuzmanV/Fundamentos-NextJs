@@ -18,3 +18,8 @@ export interface ComparativeHistoryData {
   data: string;
   [key: string]: number | string;
 }
+
+export interface DropdownOption {
+  value: string;
+  label: string;
+}
