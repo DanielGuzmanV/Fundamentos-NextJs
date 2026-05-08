@@ -1,4 +1,4 @@
-import { CryptoSummary, SelectableAsset } from "../types/crypto";
+import { CryptoSummary, DropdownOption, SelectableAsset } from "../types/crypto";
 
 export const TOP_COINS: CryptoSummary[] = [
   { name: "Bitcoin", symbol: "BTC", price: "$64,230.50", change: 2.45 },
@@ -16,6 +16,12 @@ export const PRICE_HISTORY = [
   { day: "Sab", price: 65000 },
   { day: "Dom", price: 64230 },
 ];
+
+export const TIME_RANGE_OPTIONS: DropdownOption[] = [
+  {value: "day", label: "Dia"},
+  {value: "week", label: "Semana"},
+  {value: "month", label: "Mes"},
+]
 
 // Lista de activos seleccionables
 export const SELECTABLE_ASSETS: SelectableAsset[] = [
