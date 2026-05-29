@@ -12,6 +12,7 @@ export interface NavItemConfig {
 export const MENU_ITEMS: NavItemConfig[] = [
   {name: 'Dashboard', icon: LayoutDashboard, href: PATHS.HOME},
   {name: 'Proyecto 1', icon: LampDesk, href: PATHS.PROJECT_1},
+  {name: 'Proyecto 2', icon: LampDesk, href: PATHS.PROJECT_2},
   {
     name: 'Demos',
     icon: BookOpen,
