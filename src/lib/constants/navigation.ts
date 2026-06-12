@@ -18,7 +18,7 @@ export const MENU_ITEMS: NavItemConfig[] = [
     icon: BookOpen,
     isSubmenu: true,
     children:[
-      {name: 'Crypto Dashboard', href: PATHS.DEMO_1},
+      {name: 'QuickBlog', href: PATHS.DEMO_1},
       {name: 'IA-Powered Chatbot', href: PATHS.DEMO_2},
     ]
   },
