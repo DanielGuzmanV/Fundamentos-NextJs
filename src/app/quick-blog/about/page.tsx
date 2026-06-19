@@ -1,0 +1,12 @@
+export default function AboutPage () {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans p-4">
+      <div className="bg-white p-8 rounded-2xl shadow-sm border border-zinc-200 w-full max-w-md flex flex-col items-center gap-6">
+        <div className="text-center">
+          <h1 className="text-black font-bold text-2xl">Quick Blog</h1>
+          <p className="text-zinc-500 text-sm">Pantalla Acerca de:</p>
+        </div>
+      </div>
+    </div>
+  )
+}
