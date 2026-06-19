@@ -9,4 +9,6 @@ export const PATHS = {
 
   // Rutas de la demo QuickBlog
   QUICKBLOG_HOME: '/quick-blog',
+  QUICKBLOG_CATEGORIES: '/quick-blog/categories',
+  QUICKBLOG_ABOUT: '/quick-blog/about',
 } as const;
