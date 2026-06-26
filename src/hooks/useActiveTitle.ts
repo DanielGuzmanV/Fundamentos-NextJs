@@ -11,8 +11,7 @@ export const useActiveTitle = () => {
   // Buscamos en submenus
   for(const item of MENU_ITEMS) {
     if(item.isSubmenu && item.children) {
-      const subItem = item.children.find(sub => sub.href === pathname);
-      if(subItem) return subItem.name;
+      return "Demos de prueba";
     }
   }
 
