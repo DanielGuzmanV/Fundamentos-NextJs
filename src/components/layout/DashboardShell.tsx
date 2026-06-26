@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { SidebarCustom } from "@/components/layout/sidebar";
 import { useActiveTitle } from "@/hooks/useActiveTitle";
+import { PageHeader } from "./PageHeader";
 
 
 export function DashboardShell({ children }: { children: React.ReactNode }) {
@@ -32,7 +33,11 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
           </button>
           <span className="font-bold text-lg pr-5">{activeTitle}</span>
         </header>
-
+        
+        {/* Contenido principal */}
+        <div className='hidden lg:block sticky top-0 z-10 bg-gray-50 px-3 lg:px-6'>
+          <PageHeader title={activeTitle}/>
+        </div>
         <main className="flex-1 overflow-y-auto bg-gray-50">
           <div className="max-w-6xl mx-auto">
             {children}
