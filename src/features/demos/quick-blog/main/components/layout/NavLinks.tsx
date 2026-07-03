@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BLOG_NAV_LINKS } from "../constants/BlogNavLinks";
+import { BLOG_NAV_LINKS } from "../../constants/BlogNavLinks";
 
 interface Props {
   mobileMenu: () => void;
