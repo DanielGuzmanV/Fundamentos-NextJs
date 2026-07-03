@@ -1,4 +1,4 @@
-import { BlogNavbar } from "@/features/demos/quick-blog/main/components/BlogNavbar";
+import { BlogNavbar } from "@/features/demos/quick-blog/main/components/layout/BlogNavbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
