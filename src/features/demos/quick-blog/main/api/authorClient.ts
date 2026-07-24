@@ -11,8 +11,8 @@ export async function fetchAndMapAuthors(): Promise<Author[]> {
     if(!response.ok) throw new Error('Failed to fetch authors')
     const data: {results: RandomUser[]} = await response.json();
 
-    // Mapear los 10 usuarios de randomUser a los userId de JSONPlaceholder
-    return data.results.slice(0, 10).map((user, index) => ({
+    // Mapear los usuarios de randomUser a los userId de JSONPlaceholder
+    return data.results.map((user, index) => ({
       id: index + 1,
       name: `${user.name.first} ${user.name.last}`,
       email: user.email,
