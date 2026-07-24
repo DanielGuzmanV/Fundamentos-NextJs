@@ -8,4 +8,4 @@ export const RANDOM_USER_API_URL = 'https://randomuser.me/api/';
 export const LOREM_PICSUM_BASE_URL = 'https://picsum.photos';
 
 // Endpoint especifico
-export const RANDOM_USER_BLOG_AUTHORS_URL = `${RANDOM_USER_API_URL}?results=10`;
+export const RANDOM_USER_BLOG_AUTHORS_URL = `${RANDOM_USER_API_URL}?results=50`;
