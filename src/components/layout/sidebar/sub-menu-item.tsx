@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const SubMenuItem = ({ item, onClose, isCollapsed, setIsCollapsed }: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const pathname = usePathname();
   const Icon = item.icon;
 
