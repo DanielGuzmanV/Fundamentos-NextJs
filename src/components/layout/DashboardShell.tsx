@@ -39,9 +39,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
           <PageHeader title={activeTitle}/>
         </div>
         <main className="flex-1 overflow-y-auto bg-gray-50">
-          <div className="max-w-6xl mx-auto">
-            {children}
-          </div>
+          {children}
         </main>
       </div>
 
