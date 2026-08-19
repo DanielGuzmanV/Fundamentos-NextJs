@@ -67,15 +67,15 @@ export const ConceptCard = ({item, moduleSlug}: Props) => {
       </div>
 
       {/* Acción de Entrada */}
-      <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between">
-        <Link
-          href={`/conceptos/${moduleSlug}/${item.slug}`}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all"
-        >
+      <Link
+        href={`/conceptos/${moduleSlug}/${item.slug}`}
+        className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between"
+      >
+        <div className="inline-flex items-center gap-2 text-base font-semibold text-primary group-hover:gap-3 transition-all">
           Ver concepto
           <ArrowRight className="h-4 w-4" />
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 }

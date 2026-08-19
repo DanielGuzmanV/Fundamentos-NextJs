@@ -37,15 +37,15 @@ export const ConceptLevelCard = ({level}: Props) => {
       </div>
 
       {/* Acción / Botón de ingreso */}
-      <div className="mt-6 pt-4 border-t border-border/50">
-        <Link
-          href={`/conceptos/${level.slug}`}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all"
-        >
+      <Link
+        href={`/conceptos/${level.slug}`}
+        className="mt-6 pt-4 border-t border-border/50"
+      >
+        <div className="inline-flex items-center gap-2 text-base font-semibold text-primary group-hover:gap-3 transition-all">
           Explorar nivel
           <ArrowRight className="h-4 w-4" />
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 }
