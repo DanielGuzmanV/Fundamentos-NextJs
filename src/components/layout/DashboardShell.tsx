@@ -45,7 +45,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
 
       {isSidebarOpen && (
         <div 
-          className="fixed inset-0 bg-white/5 backdrop-blur-sm z-40 lg:hidden" 
+          className="fixed inset-0 bg-white/5 z-40 lg:hidden" 
           onClick={() => setIsSidebarOpen(false)} 
         />
       )}
