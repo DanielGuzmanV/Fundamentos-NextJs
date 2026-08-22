@@ -11,4 +11,9 @@ export const PATHS = {
   QUICKBLOG_HOME: '/quick-blog',
   QUICKBLOG_CATEGORIES: '/quick-blog/categories',
   QUICKBLOG_ABOUT: '/quick-blog/about',
+
+  // Rutas de Aprendizaje / Conceptos
+  CONCEPTOS: '/conceptos',
+  MODULO_DETAIL: (moduloSlug: string) => `/conceptos/${moduloSlug}`,
+  CONCEPT_DETAIL: (moduloSlug: string, conceptoSlug: string) => `/conceptos/${moduloSlug}/${conceptoSlug}`,
 } as const;
