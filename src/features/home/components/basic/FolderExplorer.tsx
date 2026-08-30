@@ -4,6 +4,7 @@ import { FileCode, Folder, Info } from "lucide-react"
 import { RenderTree } from "./RenderTree"
 import { useState } from "react";
 import { FOLDER_TREE } from "../../constants/folderTree";
+import { DynamicDetailPanel } from "./topics_1/DynamicDetailPanel";
 
 interface FileNode {
   name: string;
@@ -56,6 +57,8 @@ export const FolderExplorer = () => {
                 {selectedNode.description}
               </p>
             </div>
+
+            <DynamicDetailPanel activeItem={selectedNode}/>
           </div>
 
           <div className="flex items-center gap-2 text-xs text-muted-foreground pt-4 border-t border-border/50">
