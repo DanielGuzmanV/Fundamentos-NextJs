@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Definición de animaciones en Tailwind v4 */
+@keyframes scaleFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Registra la clase como utilidad nativa de Tailwind */
+@utility animate-template {
+  animation: scaleFade 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
