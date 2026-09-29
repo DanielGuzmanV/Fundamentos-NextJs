@@ -34,7 +34,7 @@ export const SubMenuItem = ({ item, onClose, isCollapsed, setIsCollapsed }: Prop
       <button
         onClick={handleToggle}
         className={`w-full flex items-center p-3 rounded-lg font-medium transition-all
-          ${isCollapsed ? 'justify-center' : 'justify-between gap-3'}
+          ${isCollapsed ? 'lg:justify-center justify-between gap-3' : 'justify-between gap-3'}
           ${isChildActive 
             ? 'bg-indigo-100 text-indigo-600' // 1. RUTA ACTIVA: Índigo (Prioridad máxima)
             : (isOpen && !isCollapsed)
@@ -46,17 +46,30 @@ export const SubMenuItem = ({ item, onClose, isCollapsed, setIsCollapsed }: Prop
       >
         <div className="flex items-center gap-3">
           <Icon size={22} className="shrink-0" />
-          {!isCollapsed && <span className="whitespace-nowrap transition-opacity duration-200 opacity-100">{item.name}</span>}
+          <span
+            className={`whitespace-nowrap transition-opacity duration-200 ${
+              isCollapsed ? "lg:hidden inline" : "inline"
+            }`}
+          >
+            {item.name}
+          </span>
         </div>
         
-        {!isCollapsed && (
-          <ChevronDown size={16} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-        )}
+        <ChevronDown
+          size={16}
+          className={`transition-transform ${isOpen ? "rotate-180" : ""} ${
+            isCollapsed ? "lg:hidden block" : "block"
+          }`}
+        />
       </button>
 
       {/* Solo mostramos los hijos si NO está colapsado y está abierto */}
-      {isOpen && !isCollapsed && (
-        <div className="ml-9 mt-1 flex flex-col border-l border-gray-100">
+      {isOpen && (
+        <div
+          className={`ml-9 mt-1 flex flex-col border-l border-gray-100 ${
+            isCollapsed ? "lg:hidden flex" : "flex"
+          }`}
+        >
           {item.children?.map((sub) => (
             <Link
               key={sub.href}

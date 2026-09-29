@@ -24,13 +24,11 @@ export const SidebarCustom = ({ isOpen, onClose, isCollapsed, setIsCollapsed }: 
     `}>
       <div className="flex flex-col h-full">
         {/* Header con botón de Toggle */}
-        <div className={`p-6 flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
-          {!isCollapsed && (
-            <div className="flex items-center gap-3 font-bold text-xl overflow-hidden whitespace-nowrap">
-              <span>NextJs Master</span>
-            </div>
-          )}
-          
+        <div className={`p-6 flex items-center ${isCollapsed ? 'lg:justify-center justify-between' : 'justify-between'}`}>
+          <div className={`flex items-center gap-3 font-bold text-xl overflow-hidden whitespace-nowrap ${isCollapsed ? 'lg:hidden' : 'flex'}`}>
+            <span>NextJs Master</span>
+          </div>
+        
           {/* Botón para colapsar (Solo visible en Desktop) */}
           <button 
             className="hidden lg:block p-2 text-gray-500 hover:bg-gray-100 rounded-lg transition-colors"
@@ -47,7 +45,6 @@ export const SidebarCustom = ({ isOpen, onClose, isCollapsed, setIsCollapsed }: 
 
         {/* Navegacion de items */}
         <nav className="flex-1 px-4 space-y-2 overflow-y-auto overflow-x-hidden">
-
           {MENU_ITEMS.map((item) => (
             item.isSubmenu
             ? <SubMenuItem 

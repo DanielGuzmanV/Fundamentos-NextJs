@@ -18,14 +18,20 @@ export const NavItem = ({item, onClick, isCollapsed}: Props) => {
     <Link
       href={item.href!}
       onClick={onClick}
-      className={`flex items-center p-3 rounded-lg font-medium transition-all
-        ${isActive ? 'bg-indigo-100 text-indigo-600' : 'text-gray-600 hover:bg-gray-100'}
-        ${isCollapsed ? 'justify-center' : 'gap-3'}
-      `}
-      title={isCollapsed ? item.name : ''}
+      className={`flex items-center p-3 rounded-lg font-medium transition-all ${
+        isActive ? "bg-indigo-100 text-indigo-600" : "text-gray-600 hover:bg-gray-100"
+      } ${isCollapsed ? "lg:justify-center gap-3" : "gap-3"}`}
+      title={isCollapsed ? item.name : ""}
     >
       <Icon size={20} className="shrink-0"/>
-      {!isCollapsed && <span className="whitespace-nowrap transition-opacity duration-200 opacity-100">{item.name}</span>}
+
+      <span
+        className={`whitespace-nowrap transition-opacity duration-200 ${
+          isCollapsed ? "lg:hidden inline" : "inline"
+        }`}
+      >
+        {item.name}
+      </span>
     </Link>
   )
 
