@@ -47,7 +47,7 @@ export default function ServerVsClient () {
       </section>
 
       {/* Regla de Oro / Buenas Prácticas */}
-      <section className="p-5 rounded-xl bg-indigo-950/20 border border-indigo-900/50 space-y-3">
+      <section className="p-5 rounded-xl border border-border/50 space-y-3">
         <h3 className="font-semibold text-indigo-900">La Regla de Oro para Arquitectura</h3>
         <p className="text-sm text-indigo-950 leading-relaxed">
           Mantén la directiva <code className="bg-indigo-800/50 px-1.5 py-0.5 rounded text-white font-mono text-xs">&quot;use client&quot;</code> lo más abajo posible en el árbol de componentes (<strong>hojas del árbol</strong>). Renderiza las estructuras generales, layouts y fetches de datos en el servidor, e importa los Client Components interactivos solo donde los necesites.

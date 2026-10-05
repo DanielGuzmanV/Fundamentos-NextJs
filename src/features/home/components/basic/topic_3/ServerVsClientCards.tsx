@@ -18,7 +18,7 @@ export const ServerVsClientCards = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
       {/* Tarjeta Server Component */}
-      <div className="p-5 rounded-xl border border-emerald-500/30 bg-emerald-950/10 dark:bg-emerald-950/20 space-y-4">
+      <div className="p-5 rounded-xl border border-border/50 space-y-4">
         <div className="flex items-center gap-2 text-emerald-600 font-semibold">
           <Cpu className="size-5" />
           <span>Server Component (Por Defecto)</span>
@@ -37,7 +37,7 @@ export const ServerVsClientCards = () => {
       </div>
 
       {/* Tarjeta Client Component */}
-      <div className="p-5 rounded-xl border border-indigo-500/30 bg-indigo-950/10 space-y-4">
+      <div className="p-5 rounded-xl border border-border/50 space-y-4">
         <div className="flex items-center gap-2 text-indigo-400 font-semibold">
           <Monitor className="size-5" />
           <span>Client Component (&apos;use client&apos;)</span>
