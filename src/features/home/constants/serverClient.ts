@@ -1,5 +1,6 @@
 export const SERVER_VS_CLIENT_DATA = {
   id: "server-vs-client",
+  title: "¿Qué es Server y Client component?",
   description: "Entiende el modelo híbrido de Next.js App Router: renderizado en servidor por defecto y límites de cliente con 'use client'.",
   comparisonTable: [
     {

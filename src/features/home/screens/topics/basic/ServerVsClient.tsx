@@ -4,13 +4,16 @@ import { Code2 } from "lucide-react";
 
 export default function ServerVsClient () {
   return (
-    <div className="max-w-4xl mx-auto p-3 space-y-8">
+    <div className="space-y-8">
       {/* Encabezado */}
-      <header className="space-y-2">
-        <p className="text-slate-600 text-lg font-bold">
+      <section className="space-y-3">
+        <h2 className="text-xl font-bold tracking-tight">
+          {SERVER_VS_CLIENT_DATA.title}
+        </h2>
+        <p className="text-base text-muted-foreground leading-relaxed">
           {SERVER_VS_CLIENT_DATA.description}
         </p>
-      </header>
+      </section>
 
       {/* Demostración Interactiva */}
       <section className="space-y-3">
