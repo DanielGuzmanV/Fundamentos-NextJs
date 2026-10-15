@@ -1,6 +1,7 @@
 import { NavigationDemo } from "@/features/home/components/basic/topic_4/NavigationDemo";
+import { SectionLinkPrefetching } from "@/features/home/components/basic/topic_4/SectionLinkPrefetching";
 import { NAVIGATION_DATA } from "@/features/home/constants/navigation.data";
-import { Navigation, Compass, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export default function NavigationNextjs() {
   return (
@@ -21,7 +22,14 @@ export default function NavigationNextjs() {
           <Sparkles className="size-5 text-indigo-500" />
           Laboratorio Interactivo de Navegación
         </h2>
-        <NavigationDemo />
+
+        <div className="space-y-6">
+          {/* 1. Demostración de Links y Prefetching */}
+          <SectionLinkPrefetching/>
+
+          {/* 2. Demostración de Hooks (useSearchParams + useRouter + usePathname) */}
+          <NavigationDemo />
+        </div>
       </section>
 
       {/* Tabla Resumen de Herramientas */}
