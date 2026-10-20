@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
-import { FolderExplorer } from "@/features/home/components/basic/FolderExplorer";
-import { ArchivesConventions } from "@/features/home/components/basic/ArchivesConventions";
+import { FolderExplorer } from "@/features/home/components/basic/topic_1/FolderExplorer";
+import { ArchivesConventions } from "@/features/home/components/basic/topic_1/ArchivesConventions";
 
 export default function EstructureFolders() {
   return (
