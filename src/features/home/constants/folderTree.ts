@@ -58,16 +58,6 @@ export const FOLDER_TREE: FileNode = {
           description: "Vista principal de /dashboard.",
         },
         {
-          name: "loading.tsx",
-          type: "special",
-          description: "UI de carga (React Suspense) para /dashboard.",
-        },
-        {
-          name: "error.tsx",
-          type: "special",
-          description: "Boundary para capturar errores dentro de /dashboard.",
-        },
-        {
           id:"template",
           name: "template.tsx",
           type: "special",
