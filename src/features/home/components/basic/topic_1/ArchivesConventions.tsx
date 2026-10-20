@@ -1,5 +1,5 @@
 import { ChevronRight, FileCode2 } from "lucide-react"
-import { SECTION_FILES } from "../../constants/sectionFiles"
+import { SECTION_FILES } from "../../../constants/sectionFiles"
 import { NotFoundComponent } from "@/components/shared/NotFoundComponent"
 
 export const ArchivesConventions = () => {

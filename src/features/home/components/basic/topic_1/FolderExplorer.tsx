@@ -3,8 +3,9 @@
 import { FileCode, Folder, Info } from "lucide-react"
 import { RenderTree } from "./RenderTree"
 import { useState } from "react";
-import { FOLDER_TREE } from "../../constants/folderTree";
-import { DynamicDetailPanel } from "./topics_1/DynamicDetailPanel";
+import { FOLDER_TREE } from "../../../constants/folderTree";
+import { DynamicDetailPanel } from "./DynamicDetailPanel";
+import { BASIC_CONCEPTS } from "../../../data/concepts/basic_concepts";
 
 interface FileNode {
   name: string;
@@ -16,11 +17,31 @@ interface FileNode {
 export const FolderExplorer = () => {
   const [selectedNode, setSelectedNode] = useState<FileNode>(FOLDER_TREE);
 
+  const folderConcept = BASIC_CONCEPTS.items.find(item => item.id === "folder-structure");
+  const subItems = folderConcept?.subItems || [];
+
   return (
     <section className="space-y-4">
-      <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+      <h3 className="text-base font-semibold uppercase tracking-wider text-muted-foreground">
         Explorador de Arquitectura App Router
       </h3>
+
+      <div className="mt-4 space-y-1.5 border-t border-border/50 pt-3">
+        <p className="text-base font-semibold text-muted-foreground uppercase tracking-wider">
+          Incluye:
+        </p>
+        <ul className="space-y-1">
+          {subItems.map((sub) => (
+            <li
+              key={sub.id}
+              className="flex items-center text-xs text-muted-foreground"
+            >
+              <span className="mr-2 h-1 w-1 rounded-full bg-blue-950" />
+              <span className="truncate">{sub.title}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Árbol interactivo */}
